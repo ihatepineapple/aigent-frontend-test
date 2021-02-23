@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aigent Data - FrontEnd Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/ee0eb480be.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <h1>Data Entry Table</h1>
+        <div id="create-form">
+            
+            <select id="text-patterns">
+                <option disabled hidden selected>Add Text Pattern...</option>
+                <option value="Password">Password</option>
+                <option value="Terminate">Terminate</option>
+                <option value="Sue">Sue</option>
+                <option value="Closed Account">Closed Account</option>
+            </select>
+           
+            <select id="channels">
+                <option disabled hidden selected>Add Channel...</option>
+                <option value="Caller Channels">Caller Channels</option>
+                <option value="Agent Channels">Agent Channels</option>
+                <option value="Both Channels">Both Channels</option>
+            </select>
+
+            <button id="insert" class="btn">Insert</button>
+        </div>
+
+        
+
+     
+        <table>
+            <thead>
+                <tr>
+                  <th>Text Pattern</th>
+                  <th>Channel</th>
+                  <th>View Examples</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="data_table">
+                
+              </tbody>
+        </table>
+
+        <div id="update-form">
+            
+            <select id="text-patterns-update">
+                <option disabled hidden selected>Update Text Pattern...</option>
+                <option value="Password">Password</option>
+                <option value="Terminate">Terminate</option>
+                <option value="Sue">Sue</option>
+                <option value="Closed Account">Closed Account</option>
+            </select>
+           
+            <select id="channels-update">
+                <option disabled hidden selected>Update Channel...</option>
+                <option value="Caller Channels">Caller Channels</option>
+                <option value="Agent Channels">Agent Channels</option>
+                <option value="Both Channels">Both Channels</option>
+            </select>
+
+            <button id="update" class="btn">Update</button>
+        </div>
+       
+
+
+        <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>
