@@ -8,66 +8,68 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/ee0eb480be.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <h1>Data Entry Table</h1>
-        <div id="create-form">
+        <h2>Data Entry Table</h2>
+        <div id="content-wrapper">
+            <div id="create-form">
             
-            <select id="text-patterns">
-                <option disabled hidden selected>Add Text Pattern...</option>
-                <option value="Password">Password</option>
-                <option value="Terminate">Terminate</option>
-                <option value="Sue">Sue</option>
-                <option value="Closed Account">Closed Account</option>
-            </select>
-           
-            <select id="channels">
-                <option disabled hidden selected>Add Channel...</option>
-                <option value="Caller Channels">Caller Channels</option>
-                <option value="Agent Channels">Agent Channels</option>
-                <option value="Both Channels">Both Channels</option>
-            </select>
-
-            <button id="insert" class="btn">Insert</button>
-        </div>
-
-        
-
-     
-        <table>
-            <thead>
-                <tr>
-                  <th>Text Pattern</th>
-                  <th>Channel</th>
-                  <th>View Examples</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody id="data_table">
-                
-              </tbody>
-        </table>
-
-        <div id="update-form">
-            
-            <select id="text-patterns-update">
-                <option disabled hidden selected>Update Text Pattern...</option>
-                <option value="Password">Password</option>
-                <option value="Terminate">Terminate</option>
-                <option value="Sue">Sue</option>
-                <option value="Closed Account">Closed Account</option>
-            </select>
-           
-            <select id="channels-update">
-                <option disabled hidden selected>Update Channel...</option>
-                <option value="Caller Channels">Caller Channels</option>
-                <option value="Agent Channels">Agent Channels</option>
-                <option value="Both Channels">Both Channels</option>
-            </select>
-
-            <button id="update" class="btn">Update</button>
+                <select id="text-patterns" class="form-select form-select-sm">
+                    <option disabled hidden selected>Add Text Pattern...</option>
+                    <option value="Password">Password</option>
+                    <option value="Terminate">Terminate</option>
+                    <option value="Sue">Sue</option>
+                    <option value="Closed Account">Closed Account</option>
+                </select>
+               
+                <select id="channels" class="form-select form-select-sm">
+                    <option disabled hidden selected>Add Channel...</option>
+                    <option value="Caller Channels">Caller Channels</option>
+                    <option value="Agent Channels">Agent Channels</option>
+                    <option value="Both Channels">Both Channels</option>
+                </select>
+    
+                <button id="insert" class="btn btn-primary">Insert</button>
+            </div>
+    
+            <div id="table-wrapper">
+                <table class="table table-bordered align-middle">
+                    <thead class="table-light">
+                        <tr>
+                          <th>Text Pattern</th>
+                          <th>Channel</th>
+                          <th>View Examples</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody id="data_table">
+                        
+                      </tbody>
+                </table>
+            </div>
+    
+            <div id="update-form">
+                <hr>
+                <select id="text-patterns-update" class="form-select form-select-sm">
+                    <option disabled hidden selected>Update Text Pattern...</option>
+                    <option value="Password">Password</option>
+                    <option value="Terminate">Terminate</option>
+                    <option value="Sue">Sue</option>
+                    <option value="Closed Account">Closed Account</option>
+                </select>
+               
+                <select id="channels-update" class="form-select form-select-sm">
+                    <option disabled hidden selected>Update Channel...</option>
+                    <option value="Caller Channels">Caller Channels</option>
+                    <option value="Agent Channels">Agent Channels</option>
+                    <option value="Both Channels">Both Channels</option>
+                </select>
+    
+                <button id="update" class="btn btn-success">Update</button>
+            </div>
         </div>
        
 

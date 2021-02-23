@@ -19,10 +19,10 @@ insertData = () => {
         newDataRow.innerHTML = `
         <td class="text-cell${tableLength}">${selectedTextPattern}</td>
         <td class="channel-cel${tableLength}l">${selectedChannel}</td>
-        <td><i class="fas fa-eye"></i></td>
+        <td><i class=" fas fa-eye btn btn-secondary"></i></td>
         <td>
-            <i class="fas fa-edit btn-edit"></i>
-            <i class="fas fa-trash-alt btn-remove"></i>
+            <i class="fas fa-edit btn btn-primary btn-edit"></i>
+            <i class="fas fa-trash-alt btn btn-danger btn-remove"></i>
         </td>`;
 
     }
