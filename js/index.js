@@ -1,5 +1,4 @@
-const itemList = document.querySelector('tbody')
-
+const itemList = document.querySelector('tbody');
 
 insertData = () => {
     let newDataRow = document.createElement('tr');
@@ -24,7 +23,6 @@ insertData = () => {
             <i class="fas fa-edit btn btn-primary btn-edit"></i>
             <i class="fas fa-trash-alt btn btn-danger btn-remove"></i>
         </td>`;
-
     }
 
     itemList.appendChild(newDataRow);
@@ -35,7 +33,7 @@ insertData = () => {
 removeRow = (event) => {
     const target = event.currentTarget;
     itemList.removeChild(target.parentNode.parentNode);
-}
+};
   
 activateRemoveButtons = () => {
     const removeButtonsGroup = document.getElementsByClassName('btn-remove');
@@ -43,7 +41,7 @@ activateRemoveButtons = () => {
     for (const button of removeButtonsGroup) {
       button.addEventListener('click', removeRow);
     }
-}
+};
 
 activateEditButtons = () => {
     const editButtonsGroup = document.getElementsByClassName('btn-edit');
@@ -51,8 +49,7 @@ activateEditButtons = () => {
     for (const button of editButtonsGroup) {
       button.addEventListener('click', editRow);
     }
-}
-
+};
 
 editRow = (event) => {
     const target = event.currentTarget.parentElement.parentElement;
@@ -67,14 +64,9 @@ editRow = (event) => {
         document.getElementById("update-form").style.visibility = "hidden";
 
     });
-   
-}
-
-
-
+};
 
 window.addEventListener('load', () => {
-    
     const insertButton = document.querySelector('#insert');
     insertButton.addEventListener('click', insertData);
 });
